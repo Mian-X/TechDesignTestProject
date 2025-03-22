@@ -1,0 +1,43 @@
+Spine character 2D Animation:
+	https://assetstore.unity.com/packages/3d/animations/free-spine-2d-character-animation-177560
+
+UI Elements:
+	https://assetstore.unity.com/packages/2d/gui/icons/2d-casual-ui-hd-82080
+
+Backgrounds:
+	https://the-outlander.itch.io/free-cc0-forest-backgrounds-pack-23-05-24-10-30-06
+
+Tileset Cartoon 2D Platformer:
+	https://shane-lee.itch.io/cartoon-2d-platformer-tileset-free
+
+Sounds
+{
+	Bird ambience background sound:
+		https://freesound.org/people/laftello/sounds/565931/
+
+	Ambient background music:
+		https://freesound.org/people/LightMister/sounds/691725/
+
+	Button click:
+		https://freesound.org/people/Kolombooo/sounds/629020/
+
+	Tree leaf sound (Foliage: rustle of leaves):
+		https://sounddino.com/en/search/?s=The+rustle+of+tree+leaves
+
+	Bush sound (Cautious step with the rustle of dry leaves):
+		https://sounddino.com/en/search/?s=The+rustle+of+tree+leaves
+
+	Stone sound (The sound of a fallen and broken stone):
+		https://sounddino.com/en/search/?s=stone+sound
+}
+
+Fonts (Mighty Kingdom):
+	https://fonts-online.ru/fonts/mighty-kingdom
+
+Flags
+{
+	ru:
+		https://www.flaticon.com/free-icon/square_13481846
+	eng:
+		https://www.flaticon.com/free-icon/square_13481822
+}

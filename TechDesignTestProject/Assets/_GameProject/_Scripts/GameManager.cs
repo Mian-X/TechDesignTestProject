@@ -19,28 +19,6 @@ public class GameManager : MonoBehaviour
         if (animator == null) Debug.LogError("Missing animator!");
     }
 
-    // Return true if animation clip in animator states found, return false if is not
-    private bool HasAnimationClip(string name)
-    {
-        var controller = animator.runtimeAnimatorController as UnityEditor.Animations.AnimatorController;
-
-        if (controller == null)
-        {
-            Debug.Log("AnimatorController not found");
-            return false;
-        }
-
-        foreach (var layer in controller.layers)
-        {
-            var stateMachine = layer.stateMachine;
-            foreach (var state in stateMachine.states)
-            {
-                if (state.state.name == name) return true;
-            }
-        }
-        return false;
-    }
-
     public void LoadSceneWithDelay(int index)
     {
         StartCoroutine(LoadScene(index));
@@ -49,7 +27,7 @@ public class GameManager : MonoBehaviour
     // Load Scene by index with delay
     private IEnumerator LoadScene(int index)
     {
-        if (HasAnimationClip(loadNextSceneClip.name) == true) animator.Play(loadNextSceneClip.name);
+        animator.Play(loadNextSceneClip.name);
 
         // Wait {delay} seconds before loading scene
         yield return new WaitForSeconds(delay);
@@ -58,8 +36,17 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(index);
     }
 
-    public void QuitGame()
+    public void QuitGameWithDelay()
     {
+        StartCoroutine(QuitGame());
+    }
+
+    private IEnumerator QuitGame()
+    {
+        animator.Play(loadNextSceneClip.name);
+
+        yield return new WaitForSeconds(delay);
+
         Application.Quit();
     }
 }

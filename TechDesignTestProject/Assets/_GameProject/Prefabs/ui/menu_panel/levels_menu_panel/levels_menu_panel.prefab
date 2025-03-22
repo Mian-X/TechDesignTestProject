@@ -156,7 +156,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2246537864551805414, guid: d2c812ed0cc73804e962cb7ba551c962, type: 3}
       propertyPath: m_Name
-      value: levels_menu_panel Variant
+      value: levels_menu_panel
+      objectReference: {fileID: 0}
+    - target: {fileID: 7589298578329356777, guid: d2c812ed0cc73804e962cb7ba551c962, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7589298578329356777, guid: d2c812ed0cc73804e962cb7ba551c962, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2.5
       objectReference: {fileID: 0}
     - target: {fileID: 7813947751912173756, guid: d2c812ed0cc73804e962cb7ba551c962, type: 3}
       propertyPath: m_Pivot.x
